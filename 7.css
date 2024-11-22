@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #121212;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.navbar .nav-link {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+}
+
+.navbar .nav-link:hover {
+    color: #f39c12;
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Jumbotron */
+.container.my-5 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container.my-5 h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.container.my-5 .lead {
+    color: #555;
+}
+
+.container.my-5 hr {
+    border-color: #f39c12;
+}
+
+/* Cards Section */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #f8f9fa;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Table Styles */
+.table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table th {
+    background-color: #f39c12;
+    color: white;
+}
+
+.table-striped tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .navbar {
+        font-size: 0.9rem;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .container.my-5 {
+        padding: 20px;
+    }
+}
